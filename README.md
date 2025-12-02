@@ -44,21 +44,22 @@ The repository includes all files required to build, containerize, and deploy bo
 
 ```
 /
-├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ ├── script.js
-│ └── Dockerfile
-│
 ├── backend/
-│ ├── app.py
-│ ├── image.jpg
-│ ├── requirements.txt
-│ └── Dockerfile
+│   ├── static/
+│   │   └── img.jpg
+│   ├── Dockerfile
+│   ├── app.py
+│   ├── backend-deployment.yml
+│   ├── backend-service.yml
+│   └── requirements.txt
 │
-├── kubernetes/
-│ ├── frontend-deployment.yaml
-│ └── (optional additional YAML files)
+├── frontend/
+│   ├── Dockerfile
+│   ├── about.html
+│   ├── frontend-deployment.yml
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
 │
 └── README.md
 ```

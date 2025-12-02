@@ -42,6 +42,7 @@ The repository includes all files required to build, containerize, and deploy bo
 
 ## Repository Structure
 
+```
 /
 ├── frontend/
 │ ├── index.html
@@ -60,6 +61,7 @@ The repository includes all files required to build, containerize, and deploy bo
 │ └── (optional additional YAML files)
 │
 └── README.md
+```
 
 ---
 

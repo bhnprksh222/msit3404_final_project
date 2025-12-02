@@ -7,7 +7,8 @@ Completed by: Bhanu Prakash Akepogu and Tarun Emmanuel Majhi
 Date: December 2025
 
 
-📌 Project Overview
+
+-> Project Overview
 
 This project demonstrates end-to-end DevOps skills including:
 
@@ -29,7 +30,9 @@ Testing Kubernetes deployments using curl and browser
 
 This repository contains all files required to build, containerize, and deploy both applications.
 
-🚀 Technologies Used
+
+
+->Technologies Used
 
 Component	Technology
 Frontend	HTML, CSS, JS, NGINX
@@ -38,44 +41,32 @@ Containers	Docker, Docker Hub
 Orchestration	Kubernetes, Minikube
 Tools	kubectl, VS Code
 
-📁 Repository Structure
+
+
+-> Repository Structure
 /
-
 ├── frontend/
-
 │   ├── index.html
-
 │   ├── style.css
-
 │   ├── script.js
-
 │   └── Dockerfile
-
 │
-
 ├── backend/
-
 │   ├── app.py
-
 │   ├── image.jpg
-
 │   ├── requirements.txt
-
 │   └── Dockerfile
-
 │
-
 ├── kubernetes/
-
 │   ├── frontend-deployment.yaml
-
 │   └── (optional additional YAML files)
-
 │
-
 └── README.md
 
-🎨 Part 1 – Application Development
+
+
+
+-> Part 1 – Application Development
 
 Frontend (NGINX)
 A simple web page served through NGINX.
@@ -83,13 +74,13 @@ A simple web page served through NGINX.
 Backend (Flask)
 A basic Flask backend with a route returning a JPG image.
 
-🐳 Part 2 – Docker Build & Push
+-> Part 2 – Docker Build & Push
 
-☸️ Part 3 – Kubernetes Deployment (Minikube)
+-> Part 3 – Kubernetes Deployment (Minikube)
 
 
 
-🎯 Conclusion
+-> Conclusion
 
 This project demonstrates the complete workflow of modern DevOps:
 

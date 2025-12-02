@@ -1,32 +1,49 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevOps Final Project - Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">DevOps Project</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Creators</a></li>
+      </ul>
 
-<body>
-  <header>
-    <h1>DevOps Final Project</h1>
-    <p>Frontend Project using HTML, CSS, and JavaScript</p>
-  </header>
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" title="Toggle Dark Mode">🌙</button>
+    </nav>
 
-  <section class="content">
-    <h2>Welcome!</h2>
-    <p>
-      This project is created as part of our
-      <strong>DevOps class final project</strong>. Learn more about the
-      creators by clicking below:
-    </p>
-    <img src="http://backend:5000/image" id="backend-image" alt="Image from backend" width="300" />
+    <!-- Hero Section -->
+    <header class="hero">
+      <h1 class="hero-title">DevOps Final Project</h1>
+      <p class="hero-subtitle">Full-stack integration with CI/CD, Docker, and Cloud</p>
+      <a href="about.html" class="btn large-btn">Meet the Creators</a>
+    </header>
 
-    <a href="about.html" class="btn">Meet the Creators</a>
-  </section>
+    <!-- Main Content -->
+    <section class="content">
+      <h2>Welcome!</h2>
+      <p>
+        This project is created as part of our
+        <strong>DevOps class final project</strong>. Explore our backend image
+        generator, CI/CD pipeline and cloud deployment setup.
+      </p>
 
-  <script src="script.js"></script>
-</body>
+   
+      <img id="backend-image"  src="http://backend:5000/image" alt="Image from backend" />
 
+      <a href="about.html" class="btn">Learn More</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 DevOps Final Project Team</p>
+      <div class="socials">
+        <a href="https://github.com/bhnprksh222/msit3404_final_project" target="_blank">GitHub</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

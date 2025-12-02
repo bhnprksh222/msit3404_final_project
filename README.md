@@ -11,7 +11,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates a complete end-to-end DevOps workflow, integrating:
 
@@ -28,7 +28,7 @@ The repository includes all files required to build, containerize, and deploy bo
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Component         | Technology                   |
 | ----------------- | ---------------------------- |
@@ -40,7 +40,7 @@ The repository includes all files required to build, containerize, and deploy bo
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 /
 ├── frontend/
@@ -63,7 +63,7 @@ The repository includes all files required to build, containerize, and deploy bo
 
 ---
 
-## 🔹 Part 1 – Application Development
+## Part 1 – Application Development
 
 ### **Frontend (NGINX)**
 
@@ -78,7 +78,7 @@ A lightweight Flask backend containing:
 
 ---
 
-## 🔹 Part 2 – Docker Build & Push
+## Part 2 – Docker Build & Push
 
 Both applications were containerized with Docker.  
 Steps included:
@@ -92,7 +92,7 @@ These images were later used in Kubernetes deployments.
 
 ---
 
-## 🔹 Part 3 – Kubernetes Deployment (Minikube)
+## Part 3 – Kubernetes Deployment (Minikube)
 
 The Kubernetes deployment includes:
 
@@ -105,7 +105,7 @@ Minikube tunnel or service URLs were used to test accessibility from the browser
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 
 This project demonstrates a fully functional DevOps pipeline, including:
 

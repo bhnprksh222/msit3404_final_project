@@ -15,5 +15,6 @@ spec:
       containers:
         - name: frontend
           image: bhnprksh222/frontend-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80

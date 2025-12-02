@@ -1,93 +1,122 @@
-DevOps Project
+# DevOps Project
 
-Frontend (NGINX) + Backend (Flask) + Docker + Kubernetes (Minikube)
+### Frontend (NGINX) + Backend (Flask) + Docker + Kubernetes (Minikube)
 
-Completed by: Bhanu Prakash Akepogu and Tarun Emmanuel Majhi
+**Completed by:**
 
-Date: December 2025
+- **Bhanu Prakash Akepogu**
+- **Tarun Emmanuel Majhi**
 
+**Date:** December 2025
 
+---
 
--> Project Overview
+## 📌 Project Overview
 
-This project demonstrates end-to-end DevOps skills including:
+This project demonstrates a complete end-to-end DevOps workflow, integrating:
 
-Frontend web hosting using NGINX
+- **Frontend web hosting** using NGINX
+- **Backend REST API** using Flask (Python)
+- **Containerization** with Docker
+- **Image hosting** on Docker Hub
+- **Kubernetes deployments** on Minikube
+- **Scaling services** using replicas
+- **Pod labeling and service discovery**
+- **Testing** via browser and `curl`
 
-Backend service using Flask (Python)
+The repository includes all files required to build, containerize, and deploy both applications.
 
-Containerization using Docker
+---
 
-Image hosting on Docker Hub
+## 🛠️ Technologies Used
 
-Deployments using Kubernetes
+| Component         | Technology                   |
+| ----------------- | ---------------------------- |
+| **Frontend**      | HTML, CSS, JavaScript, NGINX |
+| **Backend**       | Python, Flask                |
+| **Containers**    | Docker, Docker Hub           |
+| **Orchestration** | Kubernetes, Minikube         |
+| **Tools**         | kubectl, VS Code             |
 
-Scaling services with replicas
+---
 
-Pod labeling and service discovery
+## 📁 Repository Structure
 
-Testing Kubernetes deployments using curl and browser
-
-This repository contains all files required to build, containerize, and deploy both applications.
-
-
-
-->Technologies Used
-
-Component	Technology
-Frontend	HTML, CSS, JS, NGINX
-Backend	Python Flask
-Containers	Docker, Docker Hub
-Orchestration	Kubernetes, Minikube
-Tools	kubectl, VS Code
-
-
-
--> Repository Structure
 /
 ├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── Dockerfile
+│ ├── index.html
+│ ├── style.css
+│ ├── script.js
+│ └── Dockerfile
 │
 ├── backend/
-│   ├── app.py
-│   ├── image.jpg
-│   ├── requirements.txt
-│   └── Dockerfile
+│ ├── app.py
+│ ├── image.jpg
+│ ├── requirements.txt
+│ └── Dockerfile
 │
 ├── kubernetes/
-│   ├── frontend-deployment.yaml
-│   └── (optional additional YAML files)
+│ ├── frontend-deployment.yaml
+│ └── (optional additional YAML files)
 │
 └── README.md
 
+---
 
+## 🔹 Part 1 – Application Development
 
+### **Frontend (NGINX)**
 
--> Part 1 – Application Development
+A simple static webpage built using HTML, CSS, and JavaScript, served via an NGINX container.
 
-Frontend (NGINX)
-A simple web page served through NGINX.
+### **Backend (Flask)**
 
-Backend (Flask)
-A basic Flask backend with a route returning a JPG image.
+A lightweight Flask backend containing:
 
--> Part 2 – Docker Build & Push
+- A root route returning a greeting message
+- An image endpoint returning a JPG file
 
--> Part 3 – Kubernetes Deployment (Minikube)
+---
 
+## 🔹 Part 2 – Docker Build & Push
 
+Both applications were containerized with Docker.  
+Steps included:
 
--> Conclusion
+1. Creating Dockerfiles for frontend and backend
+2. Building images with `docker build`
+3. Tagging images
+4. Uploading images to Docker Hub using `docker push`
 
-This project demonstrates the complete workflow of modern DevOps:
+These images were later used in Kubernetes deployments.
 
-Application development
-Containerization
-Docker Hub publishing
-Kubernetes deployment and scaling
-Pod management and service discovery
+---
 
-Together, these components offer a strong foundation for real-world DevOps pipelines and microservice architecture.
+## 🔹 Part 3 – Kubernetes Deployment (Minikube)
+
+The Kubernetes deployment includes:
+
+- A **backend deployment** with 3 replicas
+- A **frontend deployment** with 4 replicas
+- Service exposure using **ClusterIP** and **NodePort**
+- Pod verification using:
+
+Minikube tunnel or service URLs were used to test accessibility from the browser and via `curl`.
+
+---
+
+## ✅ Conclusion
+
+This project demonstrates a fully functional DevOps pipeline, including:
+
+- Application development
+- Containerization
+- Docker Hub publishing
+- Kubernetes deployment and scaling
+- Pod management
+- Service discovery
+- External access testing
+
+Together, these components showcase practical skills essential for modern DevOps and microservices-based architecture development.
+
+---
